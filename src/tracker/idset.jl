@@ -1,5 +1,5 @@
 struct IdSet{T} <: AbstractSet{T}
-  dict::IdSet{T,Nothing}
+  dict::IdDict{T,Nothing}
   IdSet{T}() where T = new(IdDict{T,Nothing}())
 end
 
